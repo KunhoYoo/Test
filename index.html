@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>김유탁 · 강채영 결혼식 안내</title>
+
+<!-- 타이포(본문: Noto Serif KR, 보조: Pretendard) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"/>
+
+<meta name="theme-color" content="#d0b48a" />
+<meta name="description" content="2025년 11월 22일(토) 14:00, 파주 센트리움웨딩홀. 신랑 김유탁 · 신부 강채영 결혼식 청첩장." />
+
+<style>
+  :root{
+    --bg:#faf8f4;          /* 아이보리 베이스 */
+    --paper:#ffffff;       /* 카드 바탕 */
+    --ink:#2a2a2a;         /* 본문 글색 */
+    --muted:#6b6b6b;       /* 보조 글색 */
+    --gold:#bfa277;        /* 메탈릭 골드 포인트 */
+    --line:#e8e2d8;        /* 라인 컬러 */
+    --radius:18px;
+    --shadow:0 10px 28px rgba(0,0,0,.06);
+  }
+
+  /* 전역 타이포 및 줄바꿈 품질 */
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Noto Serif KR", serif;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    line-height:1.85;
+    word-break:keep-all;           /* 한글 단어 잘림 최소화 */
+    line-break:loose;              /* 자연스러운 행갈이 */
+    hyphens:none; -webkit-hyphens:none;
+  }
+
+  .wrap{
+    max-width:720px; margin:0 auto; padding:40px 18px 64px;
+  }
+
+  /* 카드(상단 히어로) */
+  .hero{
+    background:var(--paper);
+    border-radius:calc(var(--radius) + 6px);
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+    padding:48px 28px 40px;
+    position:relative;
+  }
+  /* 은은한 더블 보더 */
+  .hero::after{
+    content:""; position:absolute; inset:10px; border-radius:calc(var(--radius) + 2px);
+    border:1px solid #efe9df; pointer-events:none;
+  }
+
+  /* 상단 소제목 (Small Caps 느낌) */
+  .eyebrow{
+    font-family:"Pretendard", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    letter-spacing:.18em; text-transform:uppercase;
+    font-size:12px; color:#7b6a53;
+  }
+
+  .title{
+    margin:10px 0 6px;
+    font-weight:700;
+    font-size:clamp(28px, 6.2vw, 40px);
+    letter-spacing:.02em;
+  }
+  .divider{
+    width:min(120px, 28%);
+    margin:22px 0 0;
+    border:0; height:1px;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  .pair{
+    margin:18px 0 6px;
+    font-size:clamp(18px, 4.5vw, 22px);
+    color:#3d3d3d;
+  }
+
+  .meta{
+    margin-top:8px;
+    color:var(--muted);
+    font-size:clamp(14px, 3.8vw, 16px);
+  }
+
+  /* 본문 카드 */
+  .card{
+    margin-top:18px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 22px;
+    box-shadow:var(--shadow);
+  }
+
+  .section-h{
+    font-family:"Pretendard", system-ui, -apple-system;
+    font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+    font-size:12px; color:#7b6a53;
+    margin:0 0 12px;
+  }
+
+  .date{
+    font-weight:700;
+    font-size:clamp(18px, 4.8vw, 22px);
+    color:#2f2b26;
+  }
+
+  .place{
+    margin-top:6px; color:#50463a;
+    font-size:clamp(15px, 4.2vw, 17px);
+  }
+
+  .lead{
+    margin-top:14px; color:#3a3a3a; font-size:16px;
+  }
+
+  /* 버튼 영역 */
+  .actions{
+    display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:16px;
+  }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    text-decoration:none; cursor:pointer;
+    font-family:"Pretendard", system-ui, -apple-system;
+    font-weight:600; letter-spacing:.02em; font-size:15px;
+    padding:14px 16px; border-radius:12px;
+    color:#3b3126; background:linear-gradient(180deg,#fff,#faf3e6);
+    border:1px solid #e9dfcf;
+    box-shadow:0 8px 18px rgba(191,162,119,.12);
+    transition:filter .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{ filter:brightness(1.02); box-shadow:0 10px 22px rgba(191,162,119,.18); }
+  .btn:active{ transform:translateY(1px) scale(.996); }
+  .btn.secondary{
+    background:linear-gradient(180deg,#fff,#f6f6f6);
+    border-color:#e6e3de; color:#333;
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+  }
+
+  /* 신랑·신부 정보 */
+  .names{
+    display:flex; gap:24px; justify-content:center; align-items:center;
+    margin-top:8px; color:#3b3b3b; font-size:16px;
+  }
+  .badge{
+    font-family:"Pretendard", system-ui, -apple-system;
+    font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    color:#7b6a53;
+    border:1px solid #e8e1d7; padding:.28em .7em; border-radius:999px;
+    margin-right:8px; background:#fff;
+  }
+
+  /* 하단 안내 */
+  .foot{
+    text-align:center; color:#7a6a54; font-size:12.5px; margin-top:12px;
+    font-family:"Pretendard", system-ui, -apple-system;
+    letter-spacing:.04em;
+  }
+
+  /* 모바일 미세조정 */
+  @media (max-width:460px){
+    .wrap{ padding:28px 14px 52px; }
+    .hero{ padding:40px 20px 32px; }
+    .card{ padding:20px 16px; }
+    .actions{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-label="결혼식 청첩장">
+    <!-- 상단 히어로 -->
+    <section class="hero" aria-labelledby="title">
+      <div class="eyebrow">WEDDING INVITATION</div>
+      <h1 id="title" class="title">김유탁 · 강채영</h1>
+      <hr class="divider" aria-hidden="true" />
+      <p class="pair" aria-label="초대 문구">
+        두 사람이 한 마음으로 새로운 길을 시작합니다.
+      </p>
+      <p class="meta">정중히 모시고 인사드립니다.</p>
+    </section>
+
+    <!-- 일정 / 장소 -->
+    <section class="card" aria-label="일정과 장소">
+      <h2 class="section-h" aria-hidden="true">DATE & VENUE</h2>
+      <div class="date">2025년 11월 22일(토) 오후 2시</div>
+      <div class="place">파주 센트리움웨딩홀</div>
+      <p class="lead">
+        귀한 걸음으로 축복해 주시면 더없는 영광으로 마음에 간직하겠습니다.
+      </p>
+
+      <!-- 네이버맵: 앱/웹 동시 제공 -->
+      <div class="actions" style="margin-top:18px">
+        <!-- 네이버지도 앱 (모바일에서 우선 실행) -->
+        <a class="btn"
+           href="nmap://search?query=%ED%8C%8C%EC%A3%BC%20%EC%84%BC%ED%8A%B8%EB%A6%AC%EC%9B%80%EC%9B%A8%EB%94%A9%ED%99%80"
+           target="_blank" rel="noopener">
+          📍 네이버지도 앱 길찾기
+        </a>
+        <!-- 브라우저용(PC/앱 미설치 시) -->
+        <a class="btn secondary"
+           href="https://map.naver.com/v5/search/%ED%8C%8C%EC%A3%BC%20%EC%84%BC%ED%8A%B8%EB%A6%AC%EC%9B%80%EC%9B%A8%EB%94%A9%ED%99%80"
+           target="_blank" rel="noopener">
+          🌐 브라우저에서 위치 보기
+        </a>
+      </div>
+    </section>
+
+    <!-- 신랑·신부 -->
+    <section class="card" aria-label="신랑 신부">
+      <h2 class="section-h" aria-hidden="true">BRIDE & GROOM</h2>
+      <div class="names">
+        <span><span class="badge">GROOM</span>김유탁</span>
+        <span>·</span>
+        <span><span class="badge">BRIDE</span>강채영</span>
+      </div>
+    </section>
+
+    <!-- 인사 -->
+    <section class="foot">
+      © 2025. 신랑 김유탁 · 신부 강채영. 귀한 축복에 감사드립니다.
+    </section>
+  </main>
+</body>
+</html>
